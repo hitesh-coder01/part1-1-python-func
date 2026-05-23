@@ -48,5 +48,35 @@ print(second,type(second))
 filename = input("Enter filename: ")
 extension = filename.split(".")[-1]
 print("Extension is:", extension)
+                                  #8
+# Program to display first and last colors
+color_list = ["Red", "Green", "White", "Black"]
+print("First color:", color_list[0])
+print("Last color:", color_list[-1])
+                                  #9
+exam_st_date = (11, 12, 2014)
+print( "The examination will start from %d/%d/%d" %exam_st_date)
+                                    #10
+# Program to calculate n + nn + nnn
+n = input("Enter a number: ")
+nn = n + n
+nnn = n + n + n
+result = int(n) + int(nn) + int(nnn)
+print("Result:", result)
+                                    #11
+func=print
+print(func.__doc__)
+                                    #12
+import calendar
+m=int(input("enter the month"))
+y=int(input("enter the year"))
+print(calendar.month(y,m))
+
+import calendar
+year=int(input("enter the year"))
+print(calendar.calendar(year))
+
+
+
 
 
