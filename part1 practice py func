@@ -21,3 +21,8 @@ print(f"r={r}")
 print(f"areaofcircle={areaofcircle}")
 
                                       #5
+fn=input("First Name:")
+ln=input("Last Name:")
+res2=(fn+" "+ln)[::-1]
+print(res2)
+
