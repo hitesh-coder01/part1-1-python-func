@@ -43,3 +43,10 @@ print(t)
 second=tuple(t)
 print(second,type(second))
 
+                                    #7
+# Program to print file extension
+filename = input("Enter filename: ")
+extension = filename.split(".")[-1]
+print("Extension is:", extension)
+
+
