@@ -75,6 +75,20 @@ print(calendar.month(y,m))
 import calendar
 year=int(input("enter the year"))
 print(calendar.calendar(year))
+                                    #13
+# Printing a here document (multi-line string) in Python
+print("""
+a string that you "don't" have to escape
+This
+is a ....... multi-line
+heredoc string --------> example
+""")
+                                    #14
+import datetime
+firstdate= datetime.datetime(2014,7,2)
+seconddate= datetime.datetime(2014,7,11)
+print("difference between both date",seconddate-firstdate)
+
 
 
 
