@@ -25,4 +25,21 @@ fn=input("First Name:")
 ln=input("Last Name:")
 res2=(fn+" "+ln)[::-1]
 print(res2)
+                                      #6  
+values = input("Enter comma-separated numbers:")
+lst=list(values.split(","))
+tpl=tuple(lst)
+print(lst,type(lst))
+print(tpl,type(tpl))
+
+# ############ //////
+
+r=int(input("how many number list you want"))
+t=list()
+for i in range(r+1):
+    y=int(input())
+    t.append(y)
+print(t)
+second=tuple(t)
+print(second,type(second))
 
