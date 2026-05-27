@@ -89,6 +89,16 @@ firstdate= datetime.datetime(2014,7,2)
 seconddate= datetime.datetime(2014,7,11)
 print("difference between both date",seconddate-firstdate)
 
+##
+n=int(input("enter a number"))
+if n%2==0:
+    res="even"
+else:
+    res="odd"
+print(res)
+
+##
+
 
 
 
