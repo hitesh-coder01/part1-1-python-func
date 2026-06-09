@@ -100,6 +100,29 @@ print(res)
 ##
 
 
+#DATABASE PRACTICE
+ 	CREATE TABLE students (id INT PRIMARY KEY, name VARCHAR(50), age INT);(unique and not null)
+ 	CREATE TABLE students (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(50), age INT);
+ 	Primary key constraint he ,par auto_increament constraint nhi he(property/attribute ) hai
+ 	ALTER TABLE students
+ 	MODIFY id INT AUTO_INCREMENT;
+ 	CREATE TABLE users ( id INT AUTO_INCREMENT PRIMARY KEY,   name VARCHAR(50) NOT NULL, age INT);
+ 	age INT DEFAULT 18
+ 	ALTER TABLE students
+ 	MODIFY age INT DEFAULT 18;
+ 	CREATE TABLE users ( id INT AUTO_INCREMENT PRIMARY KEY,  email VARCHAR(100) UNIQUE);
+ 	CREATE TABLE orders (  order_id INT PRIMARY KEY,  student_id INT,  FOREIGN KEY (student_id)
+ 	    REFERENCES students(id)
+ 	);SELECT * FROM students INNER JOIN orders ON students.id = orders.student_id;
+ 	SELECT s.name, o.order_id FROM students s LEFT JOIN orders o  ON s.id = o.student_id;
+ 	SELECT s.name, o.order_id FROM students s RIGHT JOIN orders o ON s.id = o.student_id;
+ 	SELECT city, COUNT(*) FROM students GROUP BY city;
+ 	SELECT name, city FROM student GROUP BY city;
+ 	SELECT city, COUNT(*)
+ 	FROM students WHERE age > 18 GROUP BY city HAVING COUNT(*) >= 2;
+ 	•  WHERE individual rows ko filter karta hai. 
+ 	•  HAVING grouped result ko filter karta hai
+ 	SELECT DISTINCT city FROM students;SELECT *FROM studentsWHERE name LIKE 'R%';      '%l        "oh"        'R____'
 
 
 
